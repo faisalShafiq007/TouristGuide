@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.touristguide">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:usesCleartextTraffic="true"
+        android:allowBackup="true"
+        android:icon="@drawable/acc"
+        android:label="TourGuide"
+        android:roundIcon="@drawable/acc"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".resturant" android:screenOrientation="portrait"
+            ></activity>
+        <activity android:name=".hotels" android:screenOrientation="portrait"
+            />
+        <activity android:name=".placestovisit" android:screenOrientation="portrait"
+            />
+        <activity android:name=".bustiming" android:screenOrientation="portrait"
+             />
+        <activity android:name=".Direction" android:screenOrientation="portrait"
+            />
+        <activity android:name=".Weather" android:screenOrientation="portrait"
+
+            />
+        <activity
+            android:name=".Platform"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".Settings"
+            android:parentActivityName=".MainActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name=".profile_show"
+            android:parentActivityName=".MainActivity" android:screenOrientation="portrait"/>
+        <activity android:name=".Profile" android:screenOrientation="portrait"/>
+        <activity android:name=".Signup" android:screenOrientation="portrait"/>
+        <activity android:name=".Signin" android:screenOrientation="portrait"/>
+        <activity android:name=".Splash" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            tools:ignore="WrongManifestParent" />
+    </application>
+
+</manifest>
